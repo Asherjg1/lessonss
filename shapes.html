@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html >
+<body>
+
+
+
+  <canvas id="myCanvas" width="300" height="700"></canvas>
+
+</body>
+<script type="text/javascript">
+  function normalFigure(){
+    var c = document.getElementById("myCanvas");
+    var ctx = c.getContext("2d");
+    ctx.clearRect(0,0,c.width,c.height)
+    ctx.beginPath();
+    ctx.arc(95, 50, 40, 0, 2 * Math.PI);
+    ctx.stroke();
+    ctx.moveTo(95, 90);
+    ctx.lineTo(95, 500);
+    ctx.stroke();
+    ctx.stroke();
+    ctx.moveTo(95,490);
+    ctx.lineTo(200,600);
+    ctx.stroke();
+    ctx.stroke();
+    ctx.moveTo(95,490);
+    ctx.lineTo(0,600);
+    ctx.stroke();
+    ctx.stroke();
+    ctx.moveTo(95,200);
+    ctx.lineTo(200,200);
+    ctx.stroke();
+    ctx.stroke();
+    ctx.moveTo(95,200);
+    ctx.lineTo(0,200);
+    ctx.stroke();
+  }
+//dabFigure()
+function dabFigure() {
+  var c = document.getElementById("myCanvas");
+  var ctx = c.getContext("2d");
+  ctx.clearRect(0,0,c.width,c.height)
+  ctx.beginPath();
+  ctx.arc(95, 50, 40, 0, 2 * Math.PI);
+  ctx.stroke();
+  ctx.moveTo(95, 90);
+  ctx.lineTo(95, 500);
+  ctx.stroke();
+  ctx.stroke();
+  ctx.moveTo(95,490);
+  ctx.lineTo(200,600);
+  ctx.stroke();
+  ctx.stroke();
+  ctx.moveTo(95,490);
+  ctx.lineTo(0,600);
+  ctx.stroke();
+  ctx.stroke();
+  ctx.moveTo(200,100);
+  ctx.lineTo(95,50);
+  ctx.stroke();
+    ctx.stroke();
+    ctx.moveTo(200,100);
+    ctx.lineTo(95,200);
+      ctx.stroke();
+      ctx.stroke();
+      ctx.moveTo(95,200);
+      ctx.lineTo(0,200);
+      ctx.stroke();
+}
+setInterval(function(){normalFigure()},2000);
+
+setInterval(function(){dabFigure()},3000);
+</script>
+</html>
